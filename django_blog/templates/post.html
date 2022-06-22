@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load static %}  
+<link href="{%static 'style.css' %}" rel="stylesheet">  
+</head>
+<body>
+
+
+
+<div class="header">
+  <h2>Shubham's Blog</h2>
+</div>
+
+<!-- /post/{{post.id}} -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h1>{{Posts.title}}</h1>
+        <h5>{{Posts.created_at}}</h5>
+        <p>{{Posts.body}}</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
